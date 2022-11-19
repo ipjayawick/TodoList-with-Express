@@ -40,6 +40,6 @@ app.post('/delete/:id', async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT||PORT, () => {
     console.log(`server started on port ${PORT}`)
 })
